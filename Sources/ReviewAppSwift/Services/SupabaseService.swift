@@ -8,7 +8,7 @@ final class SupabaseService: @unchecked Sendable {
     private init() {
         client = SupabaseClient(
             supabaseURL: SupabaseConfig.url,
-            supabaseKey: SupabaseConfig.anonKey
+            supabaseKey: SupabaseConfig.publishableKey
         )
     }
 }

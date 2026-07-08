@@ -20,3 +20,26 @@ struct CurrentProfileView: View {
         }
     }
 }
+
+#if DEBUG
+struct DevelopmentProfilePreviewView: View {
+    @Environment(\.dismiss) private var dismiss
+    @StateObject private var viewModel = ProfileViewModel()
+
+    var body: some View {
+        NavigationStack {
+            ProfileView(userId: DevelopmentProfileFixture.profileId, viewModel: viewModel)
+                .task {
+                    viewModel.loadPlaceholderProfile()
+                }
+                .toolbar {
+                    ToolbarItem(placement: .cancellationAction) {
+                        Button("Done") {
+                            dismiss()
+                        }
+                    }
+                }
+        }
+    }
+}
+#endif

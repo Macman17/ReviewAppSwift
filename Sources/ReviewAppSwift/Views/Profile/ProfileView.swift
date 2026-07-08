@@ -36,7 +36,7 @@ struct ProfileView: View {
         .toolbar {
             ToolbarItem {
                 Button {
-                    Task { await viewModel.load(userId: userId) }
+                    Task { await viewModel.refresh(userId: userId) }
                 } label: {
                     Image(systemName: "arrow.clockwise")
                 }

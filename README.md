@@ -28,9 +28,10 @@ The Swift package is still present for source organization and command-line buil
 .package(url: "https://github.com/supabase/supabase-swift.git", from: "2.0.0")
 ```
 
-The app reads Supabase config from either environment variables, `Info.plist`, or the current fallback values ported from the Expo client:
+The app reads Supabase config from either environment variables, `Info.plist`, or the current fallback values in `SupabaseConfig.swift`:
 
 - `SUPABASE_URL`
+- `SUPABASE_PUBLISHABLE_KEY`
 - `SUPABASE_ANON_KEY`
 
 For production, set those values in your app target configuration instead of relying on the fallback.

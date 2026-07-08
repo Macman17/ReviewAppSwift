@@ -1,7 +1,20 @@
 import SwiftUI
 
 struct WelcomeAuthView: View {
+    #if DEBUG
+    @State private var isShowingDevelopmentProfile = false
+    #endif
+
     var body: some View {
+        content
+            #if DEBUG
+            .sheet(isPresented: $isShowingDevelopmentProfile) {
+                DevelopmentProfilePreviewView()
+            }
+            #endif
+    }
+
+    private var content: some View {
         ZStack {
             Image("StartBackground", bundle: AppResources.bundle)
                 .resizable()
@@ -36,6 +49,19 @@ struct WelcomeAuthView: View {
                     }
 
                     AuthForm()
+
+                    #if DEBUG
+                    Button {
+                        isShowingDevelopmentProfile = true
+                    } label: {
+                        Label("Preview Placeholder Profile", systemImage: "person.crop.circle")
+                            .fontWeight(.semibold)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 10)
+                    }
+                    .buttonStyle(.bordered)
+                    .tint(.white)
+                    #endif
                 }
                 .frame(maxWidth: 420)
                 .frame(maxWidth: .infinity)
