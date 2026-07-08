@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B10000000000000000000001 /* ReviewAppSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000001 /* ReviewAppSwiftApp.swift */; };
+		B10000000000000000000002 /* ConversationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000002 /* ConversationModels.swift */; };
+		B10000000000000000000003 /* DateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000003 /* DateParser.swift */; };
+		B10000000000000000000004 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000004 /* Profile.swift */; };
+		B10000000000000000000005 /* ReviewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000005 /* ReviewModels.swift */; };
+		B10000000000000000000006 /* ReviewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000006 /* ReviewType.swift */; };
+		B10000000000000000000007 /* SocialModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000007 /* SocialModels.swift */; };
+		B10000000000000000000008 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000008 /* Story.swift */; };
+		B10000000000000000000009 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000009 /* AuthService.swift */; };
+		B1000000000000000000000A /* FollowService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000000A /* FollowService.swift */; };
+		B1000000000000000000000B /* MessagingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000000B /* MessagingService.swift */; };
+		B1000000000000000000000C /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000000C /* NotificationService.swift */; };
+		B1000000000000000000000D /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000000D /* ProfileService.swift */; };
+		B1000000000000000000000E /* ReviewAppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000000E /* ReviewAppError.swift */; };
+		B1000000000000000000000F /* ReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000000F /* ReviewService.swift */; };
+		B10000000000000000000010 /* ServicePayloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000010 /* ServicePayloads.swift */; };
+		B10000000000000000000011 /* StoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000011 /* StoriesService.swift */; };
+		B10000000000000000000012 /* SupabaseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000012 /* SupabaseConfig.swift */; };
+		B10000000000000000000013 /* SupabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000013 /* SupabaseService.swift */; };
+		B10000000000000000000014 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000014 /* Theme.swift */; };
+		B10000000000000000000015 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000015 /* ChatViewModel.swift */; };
+		B10000000000000000000016 /* ConversationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000016 /* ConversationsViewModel.swift */; };
+		B10000000000000000000017 /* PeopleSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000017 /* PeopleSearchViewModel.swift */; };
+		B10000000000000000000018 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000018 /* ProfileViewModel.swift */; };
+		B10000000000000000000019 /* ReviewComposerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000019 /* ReviewComposerViewModel.swift */; };
+		B1000000000000000000001A /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000001A /* SessionStore.swift */; };
+		B1000000000000000000001B /* TimelineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000001B /* TimelineViewModel.swift */; };
+		B1000000000000000000001C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000001C /* MainTabView.swift */; };
+		B1000000000000000000001D /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000001D /* RootView.swift */; };
+		B1000000000000000000001E /* AuthForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000001E /* AuthForm.swift */; };
+		B1000000000000000000001F /* WelcomeAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000001F /* WelcomeAuthView.swift */; };
+		B10000000000000000000020 /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000020 /* ChatScreen.swift */; };
+		B10000000000000000000021 /* ConversationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000021 /* ConversationRow.swift */; };
+		B10000000000000000000022 /* ConversationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000022 /* ConversationsView.swift */; };
+		B10000000000000000000023 /* CurrentProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000023 /* CurrentProfileView.swift */; };
+		B10000000000000000000024 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000024 /* ProfileHeader.swift */; };
+		B10000000000000000000025 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000025 /* ProfileView.swift */; };
+		B10000000000000000000026 /* PeoplePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000026 /* PeoplePicker.swift */; };
+		B10000000000000000000027 /* ReviewComposerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000027 /* ReviewComposerView.swift */; };
+		B10000000000000000000028 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000028 /* SettingsView.swift */; };
+		B10000000000000000000029 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000029 /* AvatarView.swift */; };
+		B1000000000000000000002A /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000002A /* EmptyState.swift */; };
+		B1000000000000000000002B /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000002B /* MessageBubble.swift */; };
+		B1000000000000000000002C /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000002C /* StarRatingView.swift */; };
+		B1000000000000000000002D /* StatBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000002D /* StatBlock.swift */; };
+		B1000000000000000000002E /* ReviewFeedCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000002E /* ReviewFeedCard.swift */; };
+		B1000000000000000000002F /* StoryStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000002F /* StoryStrip.swift */; };
+		B10000000000000000000030 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000030 /* TimelineView.swift */; };
+		B10000000000000000000031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000031 /* Assets.xcassets */; };
+		B10000000000000000000032 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = H10000000000000000000002 /* Supabase */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A10000000000000000000001 /* ReviewAppSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReviewAppSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C10000000000000000000001 /* ReviewAppSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewAppSwiftApp.swift; sourceTree = "<group>"; };
+		C10000000000000000000002 /* ConversationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationModels.swift; sourceTree = "<group>"; };
+		C10000000000000000000003 /* DateParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateParser.swift; sourceTree = "<group>"; };
+		C10000000000000000000004 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		C10000000000000000000005 /* ReviewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewModels.swift; sourceTree = "<group>"; };
+		C10000000000000000000006 /* ReviewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewType.swift; sourceTree = "<group>"; };
+		C10000000000000000000007 /* SocialModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialModels.swift; sourceTree = "<group>"; };
+		C10000000000000000000008 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		C10000000000000000000009 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		C1000000000000000000000A /* FollowService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowService.swift; sourceTree = "<group>"; };
+		C1000000000000000000000B /* MessagingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingService.swift; sourceTree = "<group>"; };
+		C1000000000000000000000C /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		C1000000000000000000000D /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
+		C1000000000000000000000E /* ReviewAppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewAppError.swift; sourceTree = "<group>"; };
+		C1000000000000000000000F /* ReviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewService.swift; sourceTree = "<group>"; };
+		C10000000000000000000010 /* ServicePayloads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePayloads.swift; sourceTree = "<group>"; };
+		C10000000000000000000011 /* StoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesService.swift; sourceTree = "<group>"; };
+		C10000000000000000000012 /* SupabaseConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseConfig.swift; sourceTree = "<group>"; };
+		C10000000000000000000013 /* SupabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseService.swift; sourceTree = "<group>"; };
+		C10000000000000000000014 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		C10000000000000000000015 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		C10000000000000000000016 /* ConversationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsViewModel.swift; sourceTree = "<group>"; };
+		C10000000000000000000017 /* PeopleSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleSearchViewModel.swift; sourceTree = "<group>"; };
+		C10000000000000000000018 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		C10000000000000000000019 /* ReviewComposerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewComposerViewModel.swift; sourceTree = "<group>"; };
+		C1000000000000000000001A /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		C1000000000000000000001B /* TimelineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewModel.swift; sourceTree = "<group>"; };
+		C1000000000000000000001C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		C1000000000000000000001D /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		C1000000000000000000001E /* AuthForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthForm.swift; sourceTree = "<group>"; };
+		C1000000000000000000001F /* WelcomeAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeAuthView.swift; sourceTree = "<group>"; };
+		C10000000000000000000020 /* ChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreen.swift; sourceTree = "<group>"; };
+		C10000000000000000000021 /* ConversationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationRow.swift; sourceTree = "<group>"; };
+		C10000000000000000000022 /* ConversationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsView.swift; sourceTree = "<group>"; };
+		C10000000000000000000023 /* CurrentProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentProfileView.swift; sourceTree = "<group>"; };
+		C10000000000000000000024 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
+		C10000000000000000000025 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		C10000000000000000000026 /* PeoplePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplePicker.swift; sourceTree = "<group>"; };
+		C10000000000000000000027 /* ReviewComposerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewComposerView.swift; sourceTree = "<group>"; };
+		C10000000000000000000028 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C10000000000000000000029 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		C1000000000000000000002A /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		C1000000000000000000002B /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
+		C1000000000000000000002C /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
+		C1000000000000000000002D /* StatBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatBlock.swift; sourceTree = "<group>"; };
+		C1000000000000000000002E /* ReviewFeedCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewFeedCard.swift; sourceTree = "<group>"; };
+		C1000000000000000000002F /* StoryStrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryStrip.swift; sourceTree = "<group>"; };
+		C10000000000000000000030 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		C10000000000000000000031 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E10000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000000000000000000032 /* Supabase in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D10000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				D10000000000000000000003 /* ReviewAppSwift */,
+				D10000000000000000000002 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D10000000000000000000002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000001 /* ReviewAppSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D10000000000000000000003 /* ReviewAppSwift */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000001 /* ReviewAppSwiftApp.swift */,
+				D10000000000000000000004 /* Models */,
+				D10000000000000000000005 /* Services */,
+				D10000000000000000000006 /* Support */,
+				D10000000000000000000007 /* ViewModels */,
+				D10000000000000000000008 /* Views */,
+				D10000000000000000000010 /* Resources */,
+			);
+			path = Sources/ReviewAppSwift;
+			sourceTree = "<group>";
+		};
+		D10000000000000000000004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000002 /* ConversationModels.swift */,
+				C10000000000000000000003 /* DateParser.swift */,
+				C10000000000000000000004 /* Profile.swift */,
+				C10000000000000000000005 /* ReviewModels.swift */,
+				C10000000000000000000006 /* ReviewType.swift */,
+				C10000000000000000000007 /* SocialModels.swift */,
+				C10000000000000000000008 /* Story.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D10000000000000000000005 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000009 /* AuthService.swift */,
+				C1000000000000000000000A /* FollowService.swift */,
+				C1000000000000000000000B /* MessagingService.swift */,
+				C1000000000000000000000C /* NotificationService.swift */,
+				C1000000000000000000000D /* ProfileService.swift */,
+				C1000000000000000000000E /* ReviewAppError.swift */,
+				C1000000000000000000000F /* ReviewService.swift */,
+				C10000000000000000000010 /* ServicePayloads.swift */,
+				C10000000000000000000011 /* StoriesService.swift */,
+				C10000000000000000000012 /* SupabaseConfig.swift */,
+				C10000000000000000000013 /* SupabaseService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D10000000000000000000006 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000014 /* Theme.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		D10000000000000000000007 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000015 /* ChatViewModel.swift */,
+				C10000000000000000000016 /* ConversationsViewModel.swift */,
+				C10000000000000000000017 /* PeopleSearchViewModel.swift */,
+				C10000000000000000000018 /* ProfileViewModel.swift */,
+				C10000000000000000000019 /* ReviewComposerViewModel.swift */,
+				C1000000000000000000001A /* SessionStore.swift */,
+				C1000000000000000000001B /* TimelineViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D10000000000000000000008 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C1000000000000000000001C /* MainTabView.swift */,
+				C1000000000000000000001D /* RootView.swift */,
+				D10000000000000000000009 /* Auth */,
+				D1000000000000000000000A /* Messaging */,
+				D1000000000000000000000B /* Profile */,
+				D1000000000000000000000C /* Reviews */,
+				D1000000000000000000000D /* Settings */,
+				D1000000000000000000000E /* Shared */,
+				D1000000000000000000000F /* Timeline */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D10000000000000000000009 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				C1000000000000000000001E /* AuthForm.swift */,
+				C1000000000000000000001F /* WelcomeAuthView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		D1000000000000000000000A /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000020 /* ChatScreen.swift */,
+				C10000000000000000000021 /* ConversationRow.swift */,
+				C10000000000000000000022 /* ConversationsView.swift */,
+			);
+			path = Messaging;
+			sourceTree = "<group>";
+		};
+		D1000000000000000000000B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000023 /* CurrentProfileView.swift */,
+				C10000000000000000000024 /* ProfileHeader.swift */,
+				C10000000000000000000025 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D1000000000000000000000C /* Reviews */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000026 /* PeoplePicker.swift */,
+				C10000000000000000000027 /* ReviewComposerView.swift */,
+			);
+			path = Reviews;
+			sourceTree = "<group>";
+		};
+		D1000000000000000000000D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000028 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		D1000000000000000000000E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000029 /* AvatarView.swift */,
+				C1000000000000000000002A /* EmptyState.swift */,
+				C1000000000000000000002B /* MessageBubble.swift */,
+				C1000000000000000000002C /* StarRatingView.swift */,
+				C1000000000000000000002D /* StatBlock.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D1000000000000000000000F /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				C1000000000000000000002E /* ReviewFeedCard.swift */,
+				C1000000000000000000002F /* StoryStrip.swift */,
+				C10000000000000000000030 /* TimelineView.swift */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		D10000000000000000000010 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000031 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F10000000000000000000001 /* ReviewAppSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = G10000000000000000000006 /* Build configuration list for PBXNativeTarget "ReviewAppSwift" */;
+			buildPhases = (
+				E10000000000000000000001 /* Sources */,
+				E10000000000000000000002 /* Frameworks */,
+				E10000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReviewAppSwift;
+			packageProductDependencies = (
+				H10000000000000000000002 /* Supabase */,
+			);
+			productName = ReviewAppSwift;
+			productReference = A10000000000000000000001 /* ReviewAppSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F10000000000000000000002 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1700;
+				LastUpgradeCheck = 1700;
+				TargetAttributes = {
+					F10000000000000000000001 = {
+						CreatedOnToolsVersion = 17.0;
+					};
+				};
+			};
+			buildConfigurationList = G10000000000000000000005 /* Build configuration list for PBXProject "ReviewAppSwift" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D10000000000000000000001;
+			packageReferences = (
+				H10000000000000000000001 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
+			productRefGroup = D10000000000000000000002 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F10000000000000000000001 /* ReviewAppSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E10000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000000000000000000031 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E10000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000000000000000000001 /* ReviewAppSwiftApp.swift in Sources */,
+				B10000000000000000000002 /* ConversationModels.swift in Sources */,
+				B10000000000000000000003 /* DateParser.swift in Sources */,
+				B10000000000000000000004 /* Profile.swift in Sources */,
+				B10000000000000000000005 /* ReviewModels.swift in Sources */,
+				B10000000000000000000006 /* ReviewType.swift in Sources */,
+				B10000000000000000000007 /* SocialModels.swift in Sources */,
+				B10000000000000000000008 /* Story.swift in Sources */,
+				B10000000000000000000009 /* AuthService.swift in Sources */,
+				B1000000000000000000000A /* FollowService.swift in Sources */,
+				B1000000000000000000000B /* MessagingService.swift in Sources */,
+				B1000000000000000000000C /* NotificationService.swift in Sources */,
+				B1000000000000000000000D /* ProfileService.swift in Sources */,
+				B1000000000000000000000E /* ReviewAppError.swift in Sources */,
+				B1000000000000000000000F /* ReviewService.swift in Sources */,
+				B10000000000000000000010 /* ServicePayloads.swift in Sources */,
+				B10000000000000000000011 /* StoriesService.swift in Sources */,
+				B10000000000000000000012 /* SupabaseConfig.swift in Sources */,
+				B10000000000000000000013 /* SupabaseService.swift in Sources */,
+				B10000000000000000000014 /* Theme.swift in Sources */,
+				B10000000000000000000015 /* ChatViewModel.swift in Sources */,
+				B10000000000000000000016 /* ConversationsViewModel.swift in Sources */,
+				B10000000000000000000017 /* PeopleSearchViewModel.swift in Sources */,
+				B10000000000000000000018 /* ProfileViewModel.swift in Sources */,
+				B10000000000000000000019 /* ReviewComposerViewModel.swift in Sources */,
+				B1000000000000000000001A /* SessionStore.swift in Sources */,
+				B1000000000000000000001B /* TimelineViewModel.swift in Sources */,
+				B1000000000000000000001C /* MainTabView.swift in Sources */,
+				B1000000000000000000001D /* RootView.swift in Sources */,
+				B1000000000000000000001E /* AuthForm.swift in Sources */,
+				B1000000000000000000001F /* WelcomeAuthView.swift in Sources */,
+				B10000000000000000000020 /* ChatScreen.swift in Sources */,
+				B10000000000000000000021 /* ConversationRow.swift in Sources */,
+				B10000000000000000000022 /* ConversationsView.swift in Sources */,
+				B10000000000000000000023 /* CurrentProfileView.swift in Sources */,
+				B10000000000000000000024 /* ProfileHeader.swift in Sources */,
+				B10000000000000000000025 /* ProfileView.swift in Sources */,
+				B10000000000000000000026 /* PeoplePicker.swift in Sources */,
+				B10000000000000000000027 /* ReviewComposerView.swift in Sources */,
+				B10000000000000000000028 /* SettingsView.swift in Sources */,
+				B10000000000000000000029 /* AvatarView.swift in Sources */,
+				B1000000000000000000002A /* EmptyState.swift in Sources */,
+				B1000000000000000000002B /* MessageBubble.swift in Sources */,
+				B1000000000000000000002C /* StarRatingView.swift in Sources */,
+				B1000000000000000000002D /* StatBlock.swift in Sources */,
+				B1000000000000000000002E /* ReviewFeedCard.swift in Sources */,
+				B1000000000000000000002F /* StoryStrip.swift in Sources */,
+				B10000000000000000000030 /* TimelineView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		G10000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		G10000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		G10000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ReviewAppSwift;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reviewapp.swift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		G10000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ReviewAppSwift;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reviewapp.swift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		G10000000000000000000005 /* Build configuration list for PBXProject "ReviewAppSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				G10000000000000000000001 /* Debug */,
+				G10000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		G10000000000000000000006 /* Build configuration list for PBXNativeTarget "ReviewAppSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				G10000000000000000000003 /* Debug */,
+				G10000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		H10000000000000000000001 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		H10000000000000000000002 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = H10000000000000000000001 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F10000000000000000000002 /* Project object */;
+}
