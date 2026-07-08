@@ -28,7 +28,7 @@ struct WelcomeAuthView: View {
                             .font(.system(size: 38, weight: .bold))
                             .foregroundStyle(.white)
 
-                        Text("Make sure you full picture!")
+                        Text("Make sure you full picture!!")
                             .font(.subheadline)
                             .foregroundStyle(AppTheme.muted)
                             .multilineTextAlignment(.center)
