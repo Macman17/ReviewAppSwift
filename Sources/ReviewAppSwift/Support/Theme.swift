@@ -15,7 +15,7 @@ enum AppTheme {
     static let elevated = Color(red: 0.10, green: 0.10, blue: 0.12)
     static let elevatedSoft = Color(red: 0.15, green: 0.15, blue: 0.18)
     static let primary = Color(red: 1.0, green: 0.42, blue: 0.42)
-    static let secondary = Color(red: 0.28, green: 0.55, blue: 0.96)
+    static let secondary = Color(red: 0.63, green: 0.74, blue: 0.90)
     static let text = Color.white
     static let muted = Color(red: 0.68, green: 0.68, blue: 0.72)
     static let gold = Color(red: 1.0, green: 0.84, blue: 0.16)
